@@ -527,7 +527,12 @@
             </div>
           </div>
 
-          <form class="contact-form">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xdayeebw"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New portfolio contact from danielgiblin.com" />
             <label>
               <span>Name</span>
               <input type="text" name="name" placeholder="Your name" required />
@@ -554,7 +559,7 @@
               Send Message
             </button>
             <p class="form-note" aria-live="polite">
-              This demo form provides a simple front-end confirmation.
+              Messages are sent securely through Formspree.
             </p>
           </form>
         </div>

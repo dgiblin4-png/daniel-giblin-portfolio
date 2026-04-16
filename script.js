@@ -2,7 +2,6 @@ const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-menu a");
 const projectToggles = document.querySelectorAll(".project-toggle");
-const contactForm = document.querySelector(".contact-form");
 const footerYear = document.querySelector("#footer-year");
 
 if (navToggle && navMenu) {
@@ -34,21 +33,6 @@ projectToggles.forEach((toggle) => {
     }
   });
 });
-
-if (contactForm) {
-  const formNote = contactForm.querySelector(".form-note");
-
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    if (formNote) {
-      formNote.textContent =
-        "Thanks for reaching out. This demo form has recorded your message on the page.";
-    }
-
-    contactForm.reset();
-  });
-}
 
 if (footerYear) {
   footerYear.textContent = String(new Date().getFullYear());
