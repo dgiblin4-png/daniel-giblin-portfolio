@@ -169,6 +169,35 @@ button {
   border-radius: 34px;
 }
 
+.hero-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.hero-headshot-wrap {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-headshot {
+  width: clamp(180px, 22vw, 200px);
+  height: clamp(180px, 22vw, 200px);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
 .hero-copy::before {
   content: "";
   position: absolute;
@@ -741,6 +770,17 @@ h3 {
 
   h2 {
     font-size: clamp(1.8rem, 8vw, 2.4rem);
+  }
+
+  .hero-main {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .hero-headshot-wrap {
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .hero-actions {
